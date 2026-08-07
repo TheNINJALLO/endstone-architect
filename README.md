@@ -20,8 +20,9 @@
 </p>
 
 <p align="center">
-  <a href="#overview">Overview</a> &bull;
-  <a href="#compatibility">Compatibility</a> &bull;
+  <a href="#what-it-does">What it does</a> &bull;
+  <a href="#how-to-use">How to use</a> &bull;
+  <a href="#commands-and-permissions">Commands</a> &bull;
   <a href="#install">Install</a> &bull;
   <a href="https://github.com/TheNINJALLO/endstone-architect/releases">Releases</a>
 </p>
@@ -30,11 +31,24 @@
 
 Tag-gated and team-based architect build zones for Minecraft Bedrock. This release is aligned with Endstone 0.11.8 and Minecraft Bedrock Dedicated Server 1.26.40, and is distributed as a Python wheel for direct installation in an Endstone server.
 
-## Capabilities
+## What it does
 
-- Tag-gated and team-aware construction zones
-- Persistent area and session records
-- Administrative visibility for controlled building workflows
+- Creates persistent, dimension-aware build zones with exact lower and upper bounds.
+- Restricts building by scoreboard tags or teams and can block selected items inside a zone.
+- Includes in-game creation, listing, preview, enable/disable, and deletion forms.
+
+## How to use
+
+1. Give a trusted builder `architect.admin`, then run `/architect` in game.
+2. Choose **Create New Area**, enter both corners and the dimension, then select tag- or team-based access.
+3. Add the required tags or team membership to builders and use the preview/list forms to verify the zone.
+4. Use `/architect debug` temporarily when diagnosing zone checks.
+
+## Commands and permissions
+
+| Command / usage | What it does | Access |
+|---|---|---|
+| `/architect`<br>`/architect debug` | Open the architect zone manager | `architect.admin` |
 
 ## Compatibility
 
