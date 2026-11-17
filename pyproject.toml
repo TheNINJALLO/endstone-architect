@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "endstone-architect"
-version = "1.0.17"
+version = "1.0.18"
 description = "Tag-gated and team-based architect build zones for Minecraft Bedrock"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
-    "endstone>=0.11.9,<0.12",
+    "endstone>=0.11.16,<0.12",
     "flask>=3.0"
 ]
 
